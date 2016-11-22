@@ -1,4 +1,5 @@
 " vimrc for root/sudo to use other user's vimrc
+" copy it to /root/.vimrc
 if !empty($SUDO_USER) && empty($SUDO_HOME)
   let $SUDO_HOME = expand("~" . $SUDO_USER)
 endif
